@@ -1,0 +1,20 @@
+
+; <<>> DiG 9.10.3-P4-Ubuntu <<>> pengowin.com.ar
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15577
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1460
+;; QUESTION SECTION:
+;pengowin.com.ar.		IN	A
+
+;; ANSWER SECTION:
+pengowin.com.ar.	801	IN	A	185.28.21.170
+
+;; Query time: 72 msec
+;; SERVER: 127.0.1.1#53(127.0.1.1)
+;; WHEN: Fri Jun 15 02:19:54 -03 2018
+;; MSG SIZE  rcvd: 60
+

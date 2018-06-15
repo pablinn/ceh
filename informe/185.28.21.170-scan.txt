@@ -1,0 +1,169 @@
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-06-15 02:27 -03
+Nmap scan report for 185.28.21.170
+Host is up (0.22s latency).
+Not shown: 992 filtered ports
+PORT      STATE  SERVICE    VERSION
+20/tcp    closed ftp-data
+21/tcp    open   ftp        ProFTPD or KnFTPD
+| ssl-cert: Subject: commonName=hostinger.com
+| Not valid before: 2018-02-27T00:00:00
+|_Not valid after:  2021-02-26T23:59:59
+80/tcp    open   http       openresty
+|_http-generator: WordPress 2.5
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: openresty
+|_http-title: Oops, something lost
+443/tcp   open   ssl/https  openresty
+|_http-server-header: openresty
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+| ssl-cert: Subject: commonName=hostinger.com
+| Not valid before: 2018-02-27T00:00:00
+|_Not valid after:  2021-02-26T23:59:59
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+3306/tcp  closed mysql
+5666/tcp  open   tcpwrapped
+8080/tcp  open   http-proxy openresty
+|_http-server-header: openresty
+|_http-title: Welcome to OpenResty!
+60443/tcp open   ssl/http   nginx
+|_http-server-header: openresty
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+| ssl-cert: Subject: commonName=hostinger.com
+| Not valid before: 2018-02-27T00:00:00
+|_Not valid after:  2021-02-26T23:59:59
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|_  http/1.1
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.01%I=7%D=6/15%Time=5B234E54%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,15D,"HTTP/1\.1\x20500\x20Internal\x20Server\x20Error\r\nServer:\
+SF:x20openresty\r\nDate:\x20Fri,\x2015\x20Jun\x202018\x2005:27:48\x20GMT\r
+SF:\nContent-Type:\x20text/html\r\nContent-Length:\x20190\r\nConnection:\x
+SF:20close\r\n\r\n<html>\r\n<head><title>500\x20Internal\x20Server\x20Erro
+SF:r</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>500\x20I
+SF:nternal\x20Server\x20Error</h1></center>\r\n<hr><center>openresty</cent
+SF:er>\r\n</body>\r\n</html>\r\n")%r(HTTPOptions,15D,"HTTP/1\.1\x20500\x20
+SF:Internal\x20Server\x20Error\r\nServer:\x20openresty\r\nDate:\x20Fri,\x2
+SF:015\x20Jun\x202018\x2005:27:48\x20GMT\r\nContent-Type:\x20text/html\r\n
+SF:Content-Length:\x20190\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><
+SF:title>500\x20Internal\x20Server\x20Error</title></head>\r\n<body\x20bgc
+SF:olor=\"white\">\r\n<center><h1>500\x20Internal\x20Server\x20Error</h1><
+SF:/center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n")%
+SF:r(RTSPRequest,AA,"<html>\r\n<head><title>400\x20Bad\x20Request</title><
+SF:/head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>400\x20Bad\x20Requ
+SF:est</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</htm
+SF:l>\r\n")%r(X11Probe,13F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\
+SF:x20openresty\r\nDate:\x20Fri,\x2015\x20Jun\x202018\x2005:27:49\x20GMT\r
+SF:\nContent-Type:\x20text/html\r\nContent-Length:\x20170\r\nConnection:\x
+SF:20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Request</title></he
+SF:ad>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>400\x20Bad\x20Request
+SF:</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\
+SF:r\n")%r(FourOhFourRequest,15D,"HTTP/1\.1\x20500\x20Internal\x20Server\x
+SF:20Error\r\nServer:\x20openresty\r\nDate:\x20Fri,\x2015\x20Jun\x202018\x
+SF:2005:27:50\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x201
+SF:90\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>500\x20Interna
+SF:l\x20Server\x20Error</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<
+SF:center><h1>500\x20Internal\x20Server\x20Error</h1></center>\r\n<hr><cen
+SF:ter>openresty</center>\r\n</body>\r\n</html>\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.01%T=SSL%I=7%D=6/15%Time=5B234E5B%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,15D,"HTTP/1\.1\x20500\x20Internal\x20Server\x20Error\r\nS
+SF:erver:\x20openresty\r\nDate:\x20Fri,\x2015\x20Jun\x202018\x2005:27:55\x
+SF:20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20190\r\nConnec
+SF:tion:\x20close\r\n\r\n<html>\r\n<head><title>500\x20Internal\x20Server\
+SF:x20Error</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>5
+SF:00\x20Internal\x20Server\x20Error</h1></center>\r\n<hr><center>openrest
+SF:y</center>\r\n</body>\r\n</html>\r\n")%r(HTTPOptions,15D,"HTTP/1\.1\x20
+SF:500\x20Internal\x20Server\x20Error\r\nServer:\x20openresty\r\nDate:\x20
+SF:Fri,\x2015\x20Jun\x202018\x2005:27:57\x20GMT\r\nContent-Type:\x20text/h
+SF:tml\r\nContent-Length:\x20190\r\nConnection:\x20close\r\n\r\n<html>\r\n
+SF:<head><title>500\x20Internal\x20Server\x20Error</title></head>\r\n<body
+SF:\x20bgcolor=\"white\">\r\n<center><h1>500\x20Internal\x20Server\x20Erro
+SF:r</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>
+SF:\r\n")%r(FourOhFourRequest,15D,"HTTP/1\.1\x20500\x20Internal\x20Server\
+SF:x20Error\r\nServer:\x20openresty\r\nDate:\x20Fri,\x2015\x20Jun\x202018\
+SF:x2005:27:58\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20
+SF:190\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>500\x20Intern
+SF:al\x20Server\x20Error</title></head>\r\n<body\x20bgcolor=\"white\">\r\n
+SF:<center><h1>500\x20Internal\x20Server\x20Error</h1></center>\r\n<hr><ce
+SF:nter>openresty</center>\r\n</body>\r\n</html>\r\n")%r(vmware-esx,13F,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20openresty\r\nDate:\x20F
+SF:ri,\x2015\x20Jun\x202018\x2005:28:00\x20GMT\r\nContent-Type:\x20text/ht
+SF:ml\r\nContent-Length:\x20170\r\nConnection:\x20close\r\n\r\n<html>\r\n<
+SF:head><title>400\x20Bad\x20Request</title></head>\r\n<body\x20bgcolor=\"
+SF:white\">\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n<hr><cen
+SF:ter>openresty</center>\r\n</body>\r\n</html>\r\n")%r(tor-versions,13F,"
+SF:HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20openresty\r\nDate:\x20
+SF:Fri,\x2015\x20Jun\x202018\x2005:28:01\x20GMT\r\nContent-Type:\x20text/h
+SF:tml\r\nContent-Length:\x20170\r\nConnection:\x20close\r\n\r\n<html>\r\n
+SF:<head><title>400\x20Bad\x20Request</title></head>\r\n<body\x20bgcolor=\
+SF:"white\">\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n<hr><ce
+SF:nter>openresty</center>\r\n</body>\r\n</html>\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.01%I=7%D=6/15%Time=5B234E55%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,318,"HTTP/1\.1\x20200\x20OK\r\nServer:\x20openresty\r\nDate:\x
+SF:20Fri,\x2015\x20Jun\x202018\x2005:27:48\x20GMT\r\nContent-Type:\x20text
+SF:/html\r\nContent-Length:\x20562\r\nLast-Modified:\x20Mon,\x2013\x20Nov\
+SF:x202017\x2006:13:08\x20GMT\r\nConnection:\x20close\r\nETag:\x20\"5a0937
+SF:f4-232\"\r\nAccept-Ranges:\x20bytes\r\n\r\n<!DOCTYPE\x20html>\n<html>\n
+SF:<head>\n<title>Welcome\x20to\x20OpenResty!</title>\n<style>\n\x20\x20\x
+SF:20\x20body\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20width:\x2035em;\n\x20\
+SF:x20\x20\x20\x20\x20\x20\x20margin:\x200\x20auto;\n\x20\x20\x20\x20\x20\
+SF:x20\x20\x20font-family:\x20Tahoma,\x20Verdana,\x20Arial,\x20sans-serif;
+SF:\n\x20\x20\x20\x20}\n</style>\n</head>\n<body>\n<h1>Welcome\x20to\x20Op
+SF:enResty!</h1>\n<p>If\x20you\x20see\x20this\x20page,\x20the\x20OpenResty
+SF:\x20web\x20platform\x20is\x20successfully\x20installed\x20and\nworking\
+SF:.\x20Further\x20configuration\x20is\x20required\.</p>\n\n<p>For\x20onli
+SF:ne\x20documentation\x20and\x20support\x20please\x20refer\x20to\n<a\x20h
+SF:ref=\"https://openresty\.org/\">openresty\.org</a>\.<br/></p>\n\n<p><em
+SF:>Thank\x20you\x20for\x20flying\x20OpenResty\.</em></p>\n</body>\n</html
+SF:>\n")%r(HTTPOptions,13F,"HTTP/1\.1\x20405\x20Not\x20Allowed\r\nServer:\
+SF:x20openresty\r\nDate:\x20Fri,\x2015\x20Jun\x202018\x2005:27:49\x20GMT\r
+SF:\nContent-Type:\x20text/html\r\nContent-Length:\x20170\r\nConnection:\x
+SF:20close\r\n\r\n<html>\r\n<head><title>405\x20Not\x20Allowed</title></he
+SF:ad>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>405\x20Not\x20Allowed
+SF:</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\
+SF:r\n")%r(RTSPRequest,AA,"<html>\r\n<head><title>400\x20Bad\x20Request</t
+SF:itle></head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>400\x20Bad\x
+SF:20Request</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\
+SF:n</html>\r\n")%r(FourOhFourRequest,139,"HTTP/1\.1\x20404\x20Not\x20Foun
+SF:d\r\nServer:\x20openresty\r\nDate:\x20Fri,\x2015\x20Jun\x202018\x2005:2
+SF:7:50\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20166\r\n
+SF:Connection:\x20close\r\n\r\n<html>\r\n<head><title>404\x20Not\x20Found<
+SF:/title></head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>404\x20Not
+SF:\x20Found</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\
+SF:n</html>\r\n");
+Device type: general purpose|storage-misc|broadband router|WAP|media device
+Running (JUST GUESSING): Linux 2.6.X|3.X (94%), HP embedded (91%), Ubiquiti embedded (90%), Infomir embedded (89%), Netgear RAIDiator 4.X (89%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6.32 cpe:/o:linux:linux_kernel:3 cpe:/h:hp:p2000_g3 cpe:/h:ubnt:airmax_nanostation cpe:/o:linux:linux_kernel:2.6 cpe:/h:infomir:mag-250 cpe:/o:netgear:raidiator:4.2.21 cpe:/o:linux:linux_kernel:2.6.37
+Aggressive OS guesses: Linux 2.6.32 (94%), Linux 2.6.32 - 3.13 (94%), Linux 2.6.32 - 3.1 (93%), Linux 2.6.32 - 2.6.39 (92%), Linux 2.6.39 (92%), Linux 3.10 (92%), HP P2000 G3 NAS device (91%), Linux 3.8 (91%), Linux 2.6.32 - 3.10 (90%), Linux 2.6.32 - 3.9 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 17 hops
+Service Info: OS: Unix
+
+TRACEROUTE (using port 3306/tcp)
+HOP RTT       ADDRESS
+1   54.06 ms  192.168.0.1
+2   9.84 ms   192.168.100.1
+3   5.45 ms   10.110.110.3
+4   9.97 ms   10.110.110.1
+5   10.09 ms  186-38-100-114.mrse.com.ar (186.38.100.114)
+6   203.69 ms 186-38-100-118.mrse.com.ar (186.38.100.118)
+7   17.40 ms  200.51.217.169
+8   55.32 ms  213.140.39.116
+9   174.47 ms 5.53.3.159
+10  ...
+11  311.46 ms ae-2-3513.edge1.Atlanta4.Level3.net (4.69.150.161)
+12  256.50 ms IMMEDION-LL.edge1.Atlanta4.Level3.net (4.53.236.26)
+13  ... 15
+16  270.93 ms ashv1.main-hosting.com (208.69.231.10)
+17  270.86 ms 185.28.21.170
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 147.53 seconds

@@ -1,0 +1,17 @@
+domain:		pengowin.com.ar
+registrant:	20225913413
+registrar:	nicar
+registered:	2013-11-28 00:00:00
+changed:	2017-11-04 20:06:11.206746
+expire:		2018-11-28 00:00:00
+contact:	20225913413
+name:		BANCHIERO OSCAR LEONARDO
+registrar:	nicar
+created:	2013-11-28 00:00:00
+changed:	2017-12-07 22:02:06.084856
+nserver:	ns2.hostinger-ar.com ()
+nserver:	ns4.hostinger-ar.com ()
+nserver:	ns1.hostinger-ar.com ()
+nserver:	ns3.hostinger-ar.com ()
+registrar:	nicar
+created:	2016-06-30 23:05:40.914882
