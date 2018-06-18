@@ -46,7 +46,7 @@ if [ $val == '0' ]
 
 
 #soporte para voz comentar si no se desea esta capacidad
-chek festival
+#chek festival
 
 
 while true
@@ -60,7 +60,9 @@ clear
           printf "\t$red[nmap]$green     Scan nmap puertos\n"
           printf "\t$red[nmap]$green     Scan nmap a traves de TOR\n"
           printf "\t$red[masscan]$green  Scan masscan \n"
+          printf "\t$red[nmap]$green     Scan nmap Vulscan\n"
           printf "\t$red[nexpose]$green  Scan web Nexpose \n"
+          printf "\t$red[search]$green  Busca exploits  \n"
           printf "\t$red[v]$green        Volver \n"
           printf "\t$green==========================================\n"
           printf "\t$red [*]-:"
@@ -87,8 +89,44 @@ clear
                  say $caption $simbol
                  #****************************************************************************************
                  read host
-                 sudo nmap -A -Pn $host >> informe/$host-scan.txt
+                 sudo nmap -A -Pn $host
+                 #sudo nmap -A -Pn $host >> informe/$host-scan.txt
          pause;;
+         
+         #nmap -sV --script=vulscan/vulscan.nse www.example.com
+         
+         vulscan)
+         
+                      #****************************************************************************************
+                 caption='Ingrese la ip o el dominio:'
+                 simbol='[*]-:'
+                 say $caption $simbol
+                 #****************************************************************************************
+                 read host
+                 nmap -sV --script=vulscan/vulscan.nse $host
+                     
+         
+         pause;;
+         
+         search)
+                 #****************************************************************************************
+                 caption='Ingrese la plataforma:'
+                 simbol='[*]-:'
+                 say $caption $simbol
+                 #****************************************************************************************
+                 read plat
+                 
+                 #****************************************************************************************
+                 caption='Ingrese el programa:'
+                 simbol='[*]-:'
+                 say $caption $simbol
+                 #****************************************************************************************
+                 
+                 read prog
+                 
+                 searchsploit $prg $plat -w -t
+        read;;
+
          
          t_nmap)
                  #****************************************************************************************

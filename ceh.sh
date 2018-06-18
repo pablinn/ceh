@@ -1,4 +1,4 @@
-#[DEATH NOTE]
+#[CEH]
 #!/bin/sh
 
 black=$(tput setaf 0)

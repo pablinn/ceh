@@ -160,17 +160,16 @@ clear
            sudo apt-get install ht
           fi
           
-          chek edb
+          #chek edb
           if [ $val == '0' ]
           then
            #sudo apt-get install edb
-            sudo git clone --recursive https://github.com/eteran/edb-debugger.git /opt/edb
+            sudo git clone https://github.com/eteran/edb-debugger.git /opt/edb
             cd /opt/edb
-            mkdir build
-            cd build
-            cmake ..
+            sudo mkdir build
+            #cd build
+            cmake
             make
-           ./edb
           fi
           
           chek gdb
@@ -178,7 +177,7 @@ clear
           chek file
           chek strace
           chek hte
-          #chek bokken
+          
         
           chek gcc
           if [ $val == '0' ]
@@ -207,12 +206,15 @@ clear
           sudo apt-get install gcc-arm-linux-gnueabi
           fi
           
-          #chek bokken
+          chek radare2
+          
           if [ $val == '0' ] 
           then
           
-          sudo git clone https://github.com/radare/radare2 /opt/bokken/radare2
-          sudo /opt/bokken/radare2/sys/install.sh
+          #sudo apt-get install radare2
+                    
+          sudo git clone https://github.com/radare/radare2 /opt/radare2
+          sudo /opt/radare2/sys/install.sh
           
           #sudo git clone https://github.com/radare/valabind /opt/bokken/valabind
           #cd /opt/bokken/valabind

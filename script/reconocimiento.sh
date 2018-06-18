@@ -46,7 +46,7 @@ if [ $val == '0' ]
 
 
 #soporte para voz comentar si no se desea esta capacidad
-chek festival
+#chek festival
 
 
 #https://foro.hackplayers.com/discussion/147/recursos-y-herramientas-para-el-descubrimiento-de-subdominios
@@ -122,7 +122,8 @@ clear
                    say $caption $simbol
                    #****************************************************************************************
                    read host 
-                   harvester -d $host -b all >> informe/$host-harvester.txt
+                   harvester -d $host -b linkedin
+                   #harvester -d $host -b all >> informe/$host-harvester.txt
                    
           pause;;
                      
