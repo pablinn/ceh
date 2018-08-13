@@ -1,0 +1,17 @@
+domain:		dulcemiel.com.ar
+registrant:	20293298174
+registrar:	nicar
+registered:	2017-07-10 14:52:57.557761
+changed:	2017-07-17 15:36:38.933072
+expire:		2018-07-10 00:00:00
+contact:	20293298174
+name:		ERXILAPE LUIS DAMIAN ERXILAPE LUIS DAMIAN
+registrar:	nicar
+created:	2013-09-18 00:00:00
+changed:	2018-05-06 12:47:02.460002
+nserver:	ns3.elserver.com ()
+nserver:	ns2.elserver.com ()
+nserver:	ns4.elserver.com ()
+nserver:	ns1.elserver.com ()
+registrar:	nicar
+created:	2017-07-17 15:36:38.312694
